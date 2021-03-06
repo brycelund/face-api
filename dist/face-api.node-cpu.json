@@ -679,12 +679,25 @@
         }
       ]
     },
-    "src/dom/fetchOrThrow.ts": {
-      "bytes": 390,
+    "node_modules/node-fetch/lib/index.mjs": {
+      "bytes": 41097,
+      "imports": []
+    },
+    "node_modules/cross-fetch/dist/node-ponyfill.js": {
+      "bytes": 595,
       "imports": [
         {
-          "path": "src/env/index.ts",
-          "kind": "import-statement"
+          "path": "node_modules/node-fetch/lib/index.mjs",
+          "kind": "require-call"
+        }
+      ]
+    },
+    "src/dom/fetchOrThrow.ts": {
+      "bytes": 358,
+      "imports": [
+        {
+          "path": "node_modules/cross-fetch/dist/node-ponyfill.js",
+          "kind": "require-call"
         }
       ]
     },
@@ -1292,7 +1305,7 @@
       ]
     },
     "package.json": {
-      "bytes": 1878,
+      "bytes": 1909,
       "imports": []
     },
     "src/xception/extractParams.ts": {
@@ -2591,7 +2604,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 313700
+      "bytes": 375982
     },
     "dist/face-api.node-cpu.js": {
       "imports": [],
@@ -2604,8 +2617,14 @@
         "src/env/isNodejs.ts": {
           "bytesInOutput": 176
         },
+        "node_modules/node-fetch/lib/index.mjs": {
+          "bytesInOutput": 17780
+        },
+        "node_modules/cross-fetch/dist/node-ponyfill.js": {
+          "bytesInOutput": 237
+        },
         "src/index.ts": {
-          "bytesInOutput": 3015
+          "bytesInOutput": 3016
         },
         "src/draw/index.ts": {
           "bytesInOutput": 277
@@ -2743,7 +2762,7 @@
           "bytesInOutput": 110
         },
         "src/dom/NetInput.ts": {
-          "bytesInOutput": 2214
+          "bytesInOutput": 2221
         },
         "src/dom/imageToSquare.ts": {
           "bytesInOutput": 442
@@ -2758,7 +2777,7 @@
           "bytesInOutput": 442
         },
         "src/dom/fetchOrThrow.ts": {
-          "bytesInOutput": 176
+          "bytesInOutput": 169
         },
         "src/dom/fetchImage.ts": {
           "bytesInOutput": 218
@@ -2950,16 +2969,16 @@
           "bytesInOutput": 1224
         },
         "src/ssdMobilenetv1/extractParams.ts": {
-          "bytesInOutput": 3588
+          "bytesInOutput": 3586
         },
         "src/ssdMobilenetv1/extractParamsFromWeightMap.ts": {
           "bytesInOutput": 2463
         },
         "src/ssdMobilenetv1/mobileNetV1.ts": {
-          "bytesInOutput": 715
+          "bytesInOutput": 717
         },
         "src/ssdMobilenetv1/pointwiseConvLayer.ts": {
-          "bytesInOutput": 153
+          "bytesInOutput": 154
         },
         "src/ssdMobilenetv1/nonMaxSuppression.ts": {
           "bytesInOutput": 792
@@ -2968,13 +2987,13 @@
           "bytesInOutput": 927
         },
         "src/ssdMobilenetv1/predictionLayer.ts": {
-          "bytesInOutput": 721
+          "bytesInOutput": 729
         },
         "src/ssdMobilenetv1/boxPredictionLayer.ts": {
           "bytesInOutput": 223
         },
         "src/ssdMobilenetv1/SsdMobilenetv1Options.ts": {
-          "bytesInOutput": 518
+          "bytesInOutput": 519
         },
         "src/ssdMobilenetv1/index.ts": {
           "bytesInOutput": 111
@@ -2983,22 +3002,22 @@
           "bytesInOutput": 348
         },
         "src/tinyYolov2/TinyYolov2Base.ts": {
-          "bytesInOutput": 3656
+          "bytesInOutput": 3654
         },
         "src/tinyYolov2/config.ts": {
           "bytesInOutput": 1012
         },
         "src/tinyYolov2/convWithBatchNorm.ts": {
-          "bytesInOutput": 215
+          "bytesInOutput": 222
         },
         "src/tinyYolov2/leaky.ts": {
-          "bytesInOutput": 128
+          "bytesInOutput": 135
         },
         "src/tinyYolov2/depthwiseSeparableConv.ts": {
           "bytesInOutput": 203
         },
         "src/tinyYolov2/extractParams.ts": {
-          "bytesInOutput": 1290
+          "bytesInOutput": 1286
         },
         "src/tinyYolov2/extractParamsFromWeightMap.ts": {
           "bytesInOutput": 972
@@ -3043,13 +3062,13 @@
           "bytesInOutput": 752
         },
         "src/globalApi/DetectFacesTasks.ts": {
-          "bytesInOutput": 1343
+          "bytesInOutput": 1345
         },
         "src/globalApi/detectFaces.ts": {
-          "bytesInOutput": 84
+          "bytesInOutput": 86
         },
         "src/globalApi/allFaces.ts": {
-          "bytesInOutput": 209
+          "bytesInOutput": 210
         },
         "src/globalApi/index.ts": {
           "bytesInOutput": 0
@@ -3067,7 +3086,7 @@
           "bytesInOutput": 443
         }
       },
-      "bytes": 82859
+      "bytes": 100900
     }
   }
 }

@@ -679,12 +679,16 @@
         }
       ]
     },
+    "node_modules/cross-fetch/dist/browser-ponyfill.js": {
+      "bytes": 15147,
+      "imports": []
+    },
     "src/dom/fetchOrThrow.ts": {
-      "bytes": 390,
+      "bytes": 358,
       "imports": [
         {
-          "path": "src/env/index.ts",
-          "kind": "import-statement"
+          "path": "node_modules/cross-fetch/dist/browser-ponyfill.js",
+          "kind": "require-call"
         }
       ]
     },
@@ -1292,7 +1296,7 @@
       ]
     },
     "package.json": {
-      "bytes": 1878,
+      "bytes": 1909,
       "imports": []
     },
     "src/xception/extractParams.ts": {
@@ -2591,7 +2595,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 1464566
+      "bytes": 1487746
     },
     "dist/face-api.js": {
       "imports": [],
@@ -2601,11 +2605,14 @@
         "src/env/isNodejs.ts": {
           "bytesInOutput": 181
         },
+        "node_modules/cross-fetch/dist/browser-ponyfill.js": {
+          "bytesInOutput": 8282
+        },
         "src/index.ts": {
           "bytesInOutput": 3011
         },
         "dist/tfjs.esm.js": {
-          "bytesInOutput": 1039248
+          "bytesInOutput": 1039256
         },
         "src/draw/index.ts": {
           "bytesInOutput": 280
@@ -2755,7 +2762,7 @@
           "bytesInOutput": 418
         },
         "src/dom/fetchOrThrow.ts": {
-          "bytesInOutput": 177
+          "bytesInOutput": 171
         },
         "src/dom/fetchImage.ts": {
           "bytesInOutput": 218
@@ -3067,7 +3074,7 @@
           "bytesInOutput": 446
         }
       },
-      "bytes": 1126877
+      "bytes": 1135161
     }
   }
 }

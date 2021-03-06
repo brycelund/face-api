@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch';
+const fetch = require('cross-fetch');
 
 export async function fetchOrThrow(
   url: string,
