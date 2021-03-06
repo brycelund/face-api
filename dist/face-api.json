@@ -684,7 +684,7 @@
       "imports": []
     },
     "src/dom/fetchOrThrow.ts": {
-      "bytes": 358,
+      "bytes": 451,
       "imports": [
         {
           "path": "node_modules/cross-fetch/dist/browser-ponyfill.js",
@@ -2595,7 +2595,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 1487746
+      "bytes": 1487885
     },
     "dist/face-api.js": {
       "imports": [],
@@ -2762,7 +2762,7 @@
           "bytesInOutput": 418
         },
         "src/dom/fetchOrThrow.ts": {
-          "bytesInOutput": 171
+          "bytesInOutput": 253
         },
         "src/dom/fetchImage.ts": {
           "bytesInOutput": 218
@@ -3074,7 +3074,7 @@
           "bytesInOutput": 446
         }
       },
-      "bytes": 1135161
+      "bytes": 1135243
     }
   }
 }
